@@ -35,6 +35,7 @@
     padding: 40px 15px;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, .15);
     text-align: left;
+    font-family: Quicksand;
 }
 
 .sdg-circle-container {
@@ -52,6 +53,7 @@
 
 .clean-block.clean-hero h1 {
     color: green;
+    font-weight: bold;
 }
 
 .clean-block.clean-hero h2,
@@ -64,6 +66,27 @@
 .clean-block.clean-hero p {
     font-size: 18px;
     margin-bottom: 30px;
+}
+
+.leaves-container {
+   
+    width: 100%;  /* Makes sure it spans the entire section */
+    height: 100%; /* Adjust if needed */
+}
+
+.leaf-left {
+    position: absolute;
+    bottom: 0;  /* Positions it at the bottom */
+    left: 0;  /* Positions it on the left */
+    height: 300px; /* Adjust size as needed */
+}
+
+.leaf-right {
+    position: absolute;
+    bottom: 0;  /* Positions it at the bottom */
+    right: 0;  /* Positions it on the right */
+    height: 300px; /* Adjust size as needed */
+    transform: scaleX(-1);  /* Flips the image horizontally */
 }
     
     
