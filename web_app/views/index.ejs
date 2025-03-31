@@ -1,0 +1,153 @@
+<%=
+
+
+
+%>
+
+
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+      <title>Home</title>
+      <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i">
+      <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+      <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+      <link rel="stylesheet" href="assets/fonts/simple-line-icons.min.css">
+      <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
+      <link rel="stylesheet" href="assets/css/Animation-Cards-1.css">
+      <link rel="stylesheet" href="assets/css/Animation-Cards.css">
+      <link rel="stylesheet" href="assets/css/Article-Cards.css">
+      <link rel="stylesheet" href="assets/css/Flip-Card.css">
+      <link rel="stylesheet" href="assets/css/Drag--Drop-Upload-Form.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css">
+      <link rel="stylesheet" href="assets/css/News-Cards-4-Columns-v2.css">
+      <link rel="stylesheet" href="assets/css/vanilla-zoom.min.css">
+      
+   </head>
+   <body>
+      <script src="assets/js/index.js"></script>
+
+      <%- include('partials/header.ejs') %>
+      <main class="page landing-page">
+         <section class="clean-block clean-hero" style="color:rgba(255, 255, 255, 0.85);">
+            <div class="text">
+               <h2>AI-Powered SDG Contribution Assessment</h2>
+               <h1>Understand Your Impact on Sustainable Development Goals</h1>
+               <p>SustainaTrack is an AI-driven platform that helps institutions and organizations assess their contributions to the United Nations Sustainable Development Goals (SDGs). 
+                  Using RoBERTa-based Natural Language Processing (NLP) and cloud technology, 
+                  we provide accurate insights into how your documents align with global sustainability efforts.<br></p>
+                  
+            </div>
+            <div class="sdg-circle-container">
+               <img src="/assets/img/elements/sdg-circle.png" alt="SDG Circle" height="100" >
+            </div>
+         </section>
+         <section id="sdgSection" class="clean-block clean-info dark">
+            <div class="container">
+                <div class="block-heading">
+                    <h2 class="text-info">Sustainable Development Goals</h2>
+                    <p>The 17 SDGs, established by the United Nations, aim to address global challenges such as poverty, inequality, and climate change by 2030.</p>
+                </div>
+                <div class="row" id="putSdgsHere"></div>
+            </div>
+            <div class="row">
+                <div class="col d-lg-flex justify-content-lg-center">
+                  <a href="/analyze">
+                     <button class="btn btn-outline-primary btn-lg" type="button">Get Started!</button>
+                   </a>
+                </div>
+            </div>
+        </section>
+         <section class="clean-block features">
+            <div class="container">
+               <div class="block-heading">
+                  <h2 class="text-info">How it Works</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna, dignissim nec auctor in, mattis vitae leo.</p>
+               </div>
+               <div class="row justify-content-center">
+                  <div class="col-md-5 feature-box">
+                     <i class="fas fa-upload icon"></i>
+                     <h4>1. Upload</h4>
+                     <p>Upload all your SDG-related reports as files.<br></p>
+                  </div>
+                  <div class="col-md-5 feature-box">
+                     <i class="far fa-lightbulb icon"></i>
+                     <h4>2. Analyze</h4>
+                     <p>Our AI processes the reports to evaluate SDG alignment.<br></p>
+                  </div>
+                  <div class="col-md-5 feature-box">
+                     <i class="far fa-newspaper icon"></i>
+                     <h4>3. View Results</h4>
+                     <p>Receive detailed scores for each SDG.<br></p>
+                  </div>
+                  <div class="col-md-5 feature-box">
+                     <i class="far fa-share-square icon"></i>
+                     <h4>4. Share</h4>
+                     <p>Download results or send them to your email.<br></p>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col d-lg-flex justify-content-lg-center">
+                     <a href="/analyze">
+                        <button class="btn btn-outline-primary btn-lg" type="button">Get Started!</button>
+                      </a>
+                  </div>
+               </div>
+            </div>
+         </section>
+      
+         <!-- <section class="clean-block about-us">
+            <div class="container">
+               <div class="block-heading">
+                  <h2 class="text-info">About Us</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna, dignissim nec auctor in, mattis vitae leo.</p>
+               </div>
+               <div class="row justify-content-center">
+                  <div class="col-sm-6 col-lg-4">
+                     <div class="card text-center clean-card">
+                        <img class="card-img-top w-100 d-block" src="assets/img/avatars/avatar1.jpg">
+                        <div class="card-body info">
+                           <h4 class="card-title">John Smith</h4>
+                           <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                           <div class="icons"><a href="#"><i class="icon-social-facebook"></i></a><a href="#"><i class="icon-social-instagram"></i></a><a href="#"><i class="icon-social-twitter"></i></a></div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-4">
+                     <div class="card text-center clean-card">
+                        <img class="card-img-top w-100 d-block" src="assets/img/avatars/avatar2.jpg">
+                        <div class="card-body info">
+                           <h4 class="card-title">Robert Downturn</h4>
+                           <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                           <div class="icons"><a href="#"><i class="icon-social-facebook"></i></a><a href="#"><i class="icon-social-instagram"></i></a><a href="#"><i class="icon-social-twitter"></i></a></div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-4">
+                     <div class="card text-center clean-card">
+                        <img class="card-img-top w-100 d-block" src="assets/img/avatars/avatar3.jpg">
+                        <div class="card-body info">
+                           <h4 class="card-title">Ally Sanders</h4>
+                           <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                           <div class="icons"><a href="#"><i class="icon-social-facebook"></i></a><a href="#"><i class="icon-social-instagram"></i></a><a href="#"><i class="icon-social-twitter"></i></a></div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section> -->
+      </main>
+      <footer class="page-footer dark">
+         <div class="footer-copyright">
+            <p>© 2024 Accounts Payable</p>
+         </div>
+      </footer>
+      <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
+      <script src="assets/js/vanilla-zoom.js"></script>
+      <script src="assets/js/theme.js"></script>
+   </body>
+</html>
