@@ -10,23 +10,22 @@ document.addEventListener("DOMContentLoaded", function () {
             const container = document.getElementById('putSdgsHere');
             data.forEach(sdg => {
                 const card = `
-                    <div class="col-md-6 col-lg-4 col-xl-3">
-                        <div class="container">
-                            <div class="flip-card">
-                                <div class="flip-card-inner">
-                                    <div class="flip-card-front">
-                                        <img src="${sdg.image}" width="300px" height="300px">
-                                    </div>
-                                    <div class="flip-card-back">
-                                        <h1>SDG ${sdg.id}</h1>
-                                        <p>${sdg.title}</p>
-                                        <p>${sdg.description}</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                `;
+    <div class="col-6 col-sm-4 col-md-3 col-lg-2 p-1">
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="${sdg.image}" width="200px" height="200px">
+                </div>
+                <div class="flip-card-back">
+                    <h1>SDG ${sdg.id}</h1>
+                    <p>${sdg.title}</p>
+                    <p>${sdg.description}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+`;
+
                 container.innerHTML += card;
             });
         })
