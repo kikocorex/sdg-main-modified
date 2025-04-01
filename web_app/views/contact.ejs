@@ -18,27 +18,34 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css">
     <link rel="stylesheet" href="assets/css/News-Cards-4-Columns-v2.css">
     <link rel="stylesheet" href="assets/css/vanilla-zoom.min.css">
+    <link rel="stylesheet" href="/assets/css/flip-card.css">
 </head>
 
 <body>
+  
+
     <%- include('partials/header.ejs') %>
     <main class="page contact-us-page">
         <section class="clean-block clean-form dark">
             <div class="container">
                 <div class="block-heading">
-                    <h2 class="text-info">Contact Us</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna, dignissim nec auctor in, mattis vitae leo.</p>
+                    <h2 class="text-info">About us</h2>
+                    <p>At <b>SustainaTrack</b>, we are committed to leveraging technology to drive sustainable development.
+                        Our platform provides a seamless way to analyze SDG (Sustainable Development Goals) reports, helping organizations, researchers, and policymakers 
+                        track progress toward a more sustainable future. 
+                       </p>
+                       <p>We aim to empower businesses, researchers, and communities with data-driven insights that promote transparency and accountability in sustainable development.
+                        By simplifying SDG reporting and analysis, we help bridge the gap between data and action.</p>
                 </div>
-                <form>
-                    <div class="mb-3"><label class="form-label" for="name">Name</label><input class="form-control" type="text" id="name" name="name"></div>
-                    <div class="mb-3"><label class="form-label" for="subject">Subject</label><input class="form-control" type="text" id="subject" name="subject"></div>
-                    <div class="mb-3"><label class="form-label" for="email">Email</label><input class="form-control" type="email" id="email" name="email"></div>
-                    <div class="mb-3"><label class="form-label" for="message">Message</label><textarea class="form-control" id="message" name="message"></textarea></div>
-                    <div class="mb-3"><button class="btn btn-primary" type="submit">Send</button></div>
-                </form>
+                    <div class="row" id="putSdgsHere"></div>
             </div>
         </section>
     </main>
+
+
+
+
+
     <footer class="page-footer dark">
         <div class="container">
             <div class="row">
@@ -84,6 +91,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
     <script src="assets/js/vanilla-zoom.js"></script>
     <script src="assets/js/theme.js"></script>
+    <script src="assets/js/index.js"></script>
 </body>
 
 </html>
